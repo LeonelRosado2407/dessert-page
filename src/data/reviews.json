@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "María García",
+    "texto": "Los mejores pasteles que he probado. La tarta de frutos rojos es espectacular.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos López",
+    "texto": "Pedimos el pastel de bodas y superó todas nuestras expectativas. Increíble trabajo.",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "nombre": "Ana Martínez",
+    "texto": "Siempre compro los croissants los domingos. Son increíblemente frescos y deliciosos.",
+    "rating": 4
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Hacen pasteles personalizados?",
+    "respuesta": "Sí, aceptamos pedidos personalizados con al menos 72 horas de anticipación. Contáctanos para discutir tu idea."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Tienen opciones sin gluten?",
+    "respuesta": "Contamos con una selección de productos sin gluten. Consulta disponibilidad con nuestro equipo."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Hacen entregas a domicilio?",
+    "respuesta": "Sí, realizamos entregas dentro de la ciudad. El costo varía según la zona y el monto del pedido."
+  }
+]

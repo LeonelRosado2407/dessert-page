@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "slug": "tarta-de-frutos-rojos",
+    "nombre": "Tarta de Frutos Rojos",
+    "descripcionCorta": "Tarta con fresas, arándanos y frambuesas frescas",
+    "descripcion": "Nuestra tarta estrella elaborada con frutas de temporada, base de galleta artesanal y crema pastelera suave. Cada bocado es una explosión de frescura.",
+    "historia": "Esta receta nació en 1998 cuando la abuela Rosa mezcló los frutos rojos del huerto familiar por primera vez. Desde entonces, se ha convertido en nuestro producto más emblemático.",
+    "imagenes": ["/images/tarta-frutos-rojos-1.jpg", "/images/tarta-frutos-rojos-2.jpg"],
+    "videoUrl": "",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 2,
+    "slug": "croissant-de-almendra",
+    "nombre": "Croissant de Almendra",
+    "descripcionCorta": "Croissant artesanal relleno de crema de almendra",
+    "descripcion": "Hojaldrado y crujiente por fuera, suave por dentro. Relleno de crema de almendra artesanal y cubierto con almendras laminadas.",
+    "historia": "Inspirado en un viaje a París, nuestro maestro pastelero perfeccionó esta receta durante meses hasta lograr el equilibrio perfecto entre hojaldre y relleno.",
+    "imagenes": ["/images/croissant-almendra-1.jpg"],
+    "videoUrl": "",
+    "categoria": "panaderia"
+  },
+  {
+    "id": 3,
+    "slug": "macarons-surtidos",
+    "nombre": "Macarons Surtidos",
+    "descripcionCorta": "Selección de 6 sabores clásicos franceses",
+    "descripcion": "Delicados macarons con rellenos artesanales. Sabores: frambuesa, chocolate, vainilla, pistacho, caramelo salado y limón.",
+    "historia": "Los macarons llegaron a nuestra tienda como un reto personal de nuestra pastelera principal, quien estudió en Lyon y trajo consigo las técnicas tradicionales francesas.",
+    "imagenes": ["/images/macarons-1.jpg", "/images/macarons-2.jpg", "/images/macarons-3.jpg"],
+    "videoUrl": "",
+    "categoria": "pasteles"
+  },
+  {
+    "id": 4,
+    "slug": "cheesecake-new-york",
+    "nombre": "Cheesecake New York",
+    "descripcionCorta": "Cheesecake cremoso estilo neoyorquino",
+    "descripcion": "Receta familiar horneada a baño María, con base de galleta Graham y un horneado lento que logra una textura sedosa incomparable.",
+    "historia": "Nuestra versión del clásico neoyorquino, adaptada con ingredientes locales y un toque especial de vainilla que la hace única.",
+    "imagenes": ["/images/cheesecake-1.jpg"],
+    "videoUrl": "",
+    "categoria": "pasteles"
+  }
+]

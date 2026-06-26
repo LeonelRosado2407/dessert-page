@@ -1,0 +1,127 @@
+<h2>Elige una paleta de colores</h2>
+<p class="subtitle">Cada opción muestra la paleta aplicada a la estructura del proyecto (Hero, cards, secciones)</p>
+
+<div class="cards">
+  <!-- Opción A: Cálido artesanal -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div style="background:#FFF8F0;border-radius:8px;overflow:hidden;font-family:sans-serif;font-size:12px;line-height:1.4">
+      <div style="background:#C73E3E;color:#FFF8F0;padding:12px 16px;display:flex;justify-content:space-between">
+        <span style="font-weight:bold">Dulce Tentación</span>
+        <span>Inicio Productos Historia</span>
+      </div>
+      <div style="padding:24px 16px;text-align:center">
+        <div style="font-size:20px;font-weight:bold;color:#3C2415">Dulce Tentación</div>
+        <div style="color:#8B6F47;margin:4px 0 12px">Repostería artesanal desde 1985</div>
+        <div style="display:inline-block;border:1px solid #C73E3E;color:#C73E3E;padding:6px 16px;border-radius:4px">Ver productos</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px 16px">
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #E8C872">
+          <div style="background:#E8C872;height:40px"></div>
+          <div style="padding:6px;color:#3C2415;font-weight:bold">Tarta</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #E8C872">
+          <div style="background:#E8C872;height:40px"></div>
+          <div style="padding:6px;color:#3C2415;font-weight:bold">Croissant</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #E8C872">
+          <div style="background:#E8C872;height:40px"></div>
+          <div style="padding:6px;color:#3C2415;font-weight:bold">Macarons</div>
+        </div>
+      </div>
+      <div style="background:#8B6F47;color:#FFF8F0;padding:10px 16px;text-align:center">© 2026 Dulce Tentación</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Cálido Artesanal</h3>
+      <div style="display:flex;gap:4px;margin:4px 0">
+        <span style="display:inline-block;width:20px;height:20px;background:#FFF8F0;border-radius:50%;border:1px solid #ddd" title="#FFF8F0 crema"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#3C2415;border-radius:50%;border:1px solid #ddd" title="#3C2415 marrón"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#C73E3E;border-radius:50%;border:1px solid #ddd" title="#C73E3E rojo"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#E8C872;border-radius:50%;border:1px solid #ddd" title="#E8C872 dorado"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#8B6F47;border-radius:50%;border:1px solid #ddd" title="#8B6F47 caramelo"></span>
+      </div>
+      <p style="font-size:12px">Cremoso, acogedor, tradicional — ideal para repostería clásica</p>
+    </div>
+  </div>
+
+  <!-- Opción B: Chocolate + Rose -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div style="background:#FDF2F0;border-radius:8px;overflow:hidden;font-family:sans-serif;font-size:12px;line-height:1.4">
+      <div style="background:#A65D57;color:#FDF2F0;padding:12px 16px;display:flex;justify-content:space-between">
+        <span style="font-weight:bold">Dulce Tentación</span>
+        <span>Inicio Productos Historia</span>
+      </div>
+      <div style="padding:24px 16px;text-align:center">
+        <div style="font-size:20px;font-weight:bold;color:#2D1B13">Dulce Tentación</div>
+        <div style="color:#D4A574;margin:4px 0 12px">Repostería artesanal desde 1985</div>
+        <div style="display:inline-block;border:1px solid #A65D57;color:#A65D57;padding:6px 16px;border-radius:4px">Ver productos</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px 16px">
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #D4A574">
+          <div style="background:#D4A574;height:40px"></div>
+          <div style="padding:6px;color:#2D1B13;font-weight:bold">Tarta</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #D4A574">
+          <div style="background:#D4A574;height:40px"></div>
+          <div style="padding:6px;color:#2D1B13;font-weight:bold">Croissant</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #D4A574">
+          <div style="background:#D4A574;height:40px"></div>
+          <div style="padding:6px;color:#2D1B13;font-weight:bold">Macarons</div>
+        </div>
+      </div>
+      <div style="background:#5C4033;color:#FDF2F0;padding:10px 16px;text-align:center">© 2026 Dulce Tentación</div>
+    </div>
+    <div class="card-body">
+      <h3>B — Chocolate & Rose (recomendada)</h3>
+      <div style="display:flex;gap:4px;margin:4px 0">
+        <span style="display:inline-block;width:20px;height:20px;background:#FDF2F0;border-radius:50%;border:1px solid #ddd" title="#FDF2F0 rosa pálido"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#2D1B13;border-radius:50%;border:1px solid #ddd" title="#2D1B13 chocolate"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#A65D57;border-radius:50%;border:1px solid #ddd" title="#A65D57 rosado tierra"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#D4A574;border-radius:50%;border:1px solid #ddd" title="#D4A574 toffe"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#5C4033;border-radius:50%;border:1px solid #ddd" title="#5C4033 chocolate medio"></span>
+      </div>
+      <p style="font-size:12px">Elegante, cálido, sofisticado — combina con glaseados y chocolate</p>
+    </div>
+  </div>
+
+  <!-- Opción C: Pastelería moderna -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div style="background:#FAF7F2;border-radius:8px;overflow:hidden;font-family:sans-serif;font-size:12px;line-height:1.4">
+      <div style="background:#E07A5F;color:#FAF7F2;padding:12px 16px;display:flex;justify-content:space-between">
+        <span style="font-weight:bold">Dulce Tentación</span>
+        <span>Inicio Productos Historia</span>
+      </div>
+      <div style="padding:24px 16px;text-align:center">
+        <div style="font-size:20px;font-weight:bold;color:#1A1A2E">Dulce Tentación</div>
+        <div style="color:#81B29A;margin:4px 0 12px">Repostería artesanal desde 1985</div>
+        <div style="display:inline-block;border:1px solid #E07A5F;color:#E07A5F;padding:6px 16px;border-radius:4px">Ver productos</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px 16px">
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #F2CC8F">
+          <div style="background:#F2CC8F;height:40px"></div>
+          <div style="padding:6px;color:#1A1A2E;font-weight:bold">Tarta</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #F2CC8F">
+          <div style="background:#F2CC8F;height:40px"></div>
+          <div style="padding:6px;color:#1A1A2E;font-weight:bold">Croissant</div>
+        </div>
+        <div style="background:#FFF;border-radius:4px;overflow:hidden;border:1px solid #F2CC8F">
+          <div style="background:#F2CC8F;height:40px"></div>
+          <div style="padding:6px;color:#1A1A2E;font-weight:bold">Macarons</div>
+        </div>
+      </div>
+      <div style="background:#1A1A2E;color:#FAF7F2;padding:10px 16px;text-align:center">© 2026 Dulce Tentación</div>
+    </div>
+    <div class="card-body">
+      <h3>C — Pastelería Moderna</h3>
+      <div style="display:flex;gap:4px;margin:4px 0">
+        <span style="display:inline-block;width:20px;height:20px;background:#FAF7F2;border-radius:50%;border:1px solid #ddd" title="#FAF7F2 hueso"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#1A1A2E;border-radius:50%;border:1px solid #ddd" title="#1A1A2E casi negro"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#E07A5F;border-radius:50%;border:1px solid #ddd" title="#E07A5F terracota"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#81B29A;border-radius:50%;border:1px solid #ddd" title="#81B29A verde salvia"></span>
+        <span style="display:inline-block;width:20px;height:20px;background:#F2CC8F;border-radius:50%;border:1px solid #ddd" title="#F2CC8F crema pastelera"></span>
+      </div>
+      <p style="font-size:12px">Fresco, moderno, contrastante — destaca en redes sociales</p>
+    </div>
+  </div>
+</div>
