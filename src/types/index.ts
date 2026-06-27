@@ -7,5 +7,9 @@ export interface Producto {
   historia: string
   imagenes: string[]
   videoUrl: string
+  precio: number
   categoria: string
+  subcategoria?: string
+  isTop?: boolean
+  inGallery?: boolean
 }

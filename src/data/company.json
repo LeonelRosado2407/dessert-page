@@ -1,0 +1,12 @@
+{
+    "name" : "Dulce Tentación",
+    "eslogan" : "Endulzando tu día, un bocado a la vez desde 1985",
+    "description" : "Dulce Tentación es una pastelería artesanal que ofrece una variedad de postres y productos de panadería elaborados con ingredientes frescos y de alta calidad. Nuestro compromiso es brindar experiencias dulces inolvidables a nuestros clientes. Desde clásicos favoritos hasta creaciones innovadoras, cada producto es una obra de amor y dedicación.",
+    "address" : {
+        "street" : "Calle de los Postres 123",
+        "city" : "Ciudad Dulce",
+        "state" : "Provincia de Sabor",
+        "zip" : "12345",
+        "country" : "País de los Dulces"
+    }
+}

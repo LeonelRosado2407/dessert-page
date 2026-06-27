@@ -1,16 +1,27 @@
 <script setup lang="ts">
 import { useRoute, RouterLink } from 'vue-router'
+import { useFavoritosStore } from '../stores/favoritos'
 import productos from '../data/productos.json'
 
 const route = useRoute()
+const fav = useFavoritosStore()
 const producto = productos.find((p) => p.slug === route.params.slug)
 </script>
 
 <template>
   <article v-if="producto" class="max-w-4xl mx-auto py-16 px-4">
-    <RouterLink to="/productos" class="inline-block mb-8 text-sm underline underline-offset-2 text-rose hover:text-toffee transition-colors">
-      ← Volver a productos
-    </RouterLink>
+    <div class="flex items-center justify-between mb-8">
+      <RouterLink to="/productos" class="text-sm underline underline-offset-2 text-rose hover:text-toffee transition-colors">
+        ← Volver a productos
+      </RouterLink>
+      <button
+        @click="fav.toggle(producto.id)"
+        class="text-2xl transition-transform hover:scale-110"
+        :class="fav.esFavorito(producto.id) ? 'text-rose' : 'text-chocolate-dark/40'"
+      >
+        {{ fav.esFavorito(producto.id) ? '♥' : '♡' }}
+      </button>
+    </div>
 
     <header class="mb-12">
       <h1 class="text-4xl font-bold mb-2 text-rose">{{ producto.nombre }}</h1>

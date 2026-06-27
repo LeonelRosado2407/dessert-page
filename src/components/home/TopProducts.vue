@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import productos from '../../data/productos.json'
+import { useInView } from '../../composables/useInView'
 
-const top = productos.slice(0, 3)
+const top = productos.filter((p) => p.isTop)
+
+const { target, isVisible } = useInView()
 </script>
 
 <template>
-  <section class="py-16 px-4">
+  <section
+    id="destacados"
+    ref="target"
+    class="py-16 px-4 transition-all duration-700"
+    :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
+  >
     <h2 class="text-3xl font-bold mb-8 text-center text-rose">Productos Destacados</h2>
     <div class="max-w-5xl mx-auto space-y-12">
       <article

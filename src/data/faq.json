@@ -1,17 +1,47 @@
 [
   {
     "id": 1,
-    "pregunta": "¿Hacen pasteles personalizados?",
-    "respuesta": "Sí, aceptamos pedidos personalizados con al menos 72 horas de anticipación. Contáctanos para discutir tu idea."
+    "pregunta": "¿Hacen pasteles personalizados para ocasiones especiales?",
+    "respuesta": "Sí, hacemos pasteles personalizados para cumpleaños, bodas, baby showers y cualquier ocasión especial. Te recomendamos contactarnos con al menos 5 días de anticipación para coordinar diseño, sabor y tamaño."
   },
   {
     "id": 2,
-    "pregunta": "¿Tienen opciones sin gluten?",
-    "respuesta": "Contamos con una selección de productos sin gluten. Consulta disponibilidad con nuestro equipo."
+    "pregunta": "¿Tienen opciones sin gluten o veganas?",
+    "respuesta": "Sí, contamos con una selección de productos sin gluten y veganos. Pregúntanos en sucursal o por WhatsApp cuáles están disponibles, ya que la variedad puede cambiar semana a semana."
   },
   {
     "id": 3,
-    "pregunta": "¿Hacen entregas a domicilio?",
-    "respuesta": "Sí, realizamos entregas dentro de la ciudad. El costo varía según la zona y el monto del pedido."
+    "pregunta": "¿Puedo hacer reservación para una mesa?",
+    "respuesta": "¡Claro! Puedes reservar directamente desde nuestra página web en la sección de contacto, o llamarnos por teléfono. Recomendamos reservar con anticipación los fines de semana."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Hacen envíos a domicilio?",
+    "respuesta": "Sí, hacemos envíos dentro de Mérida a través de plataforma de delivery y también puedes ordenar directamente con nosotros para entregas programadas."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuál es su horario de atención?",
+    "respuesta": "Estamos abiertos de martes a domingo. Puedes consultar el horario exacto en la sección de contacto de nuestra página."
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Aceptan tarjeta de crédito/débito?",
+    "respuesta": "Sí, aceptamos efectivo, tarjetas de crédito y débito, y pagos por transferencia."
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuánto tiempo de anticipación necesito para un pedido grande (eventos, oficinas)?",
+    "respuesta": "Para pedidos grandes o de eventos recomendamos al menos 3-5 días de anticipación, dependiendo de la cantidad y complejidad."
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Tienen estacionamiento?",
+    "respuesta": "Sí, contamos con estacionamiento disponible para nuestros clientes."
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Puedo llevar mi laptop y trabajar ahí?",
+    "respuesta": "¡Por supuesto! Contamos con WiFi gratuito y un ambiente cómodo para trabajar o estudiar."
   }
 ]

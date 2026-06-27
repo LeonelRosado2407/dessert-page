@@ -1,20 +1,38 @@
 [
   {
     "id": 1,
-    "nombre": "María García",
-    "texto": "Los mejores pasteles que he probado. La tarta de frutos rojos es espectacular.",
+    "nombre": "María Fernanda G.",
+    "texto": "El mejor lugar para los antojos de dulce. El cheesecake de mango es mi favorito, y el ambiente es súper acogedor. Ya es mi punto de encuentro favorito con amigas.",
     "rating": 5
   },
   {
     "id": 2,
-    "nombre": "Carlos López",
-    "texto": "Pedimos el pastel de bodas y superó todas nuestras expectativas. Increíble trabajo.",
+    "nombre": "Carlos Mendoza",
+    "texto": "Pedí un pastel personalizado para el cumpleaños de mi hija y quedó perfecto, tanto en sabor como en diseño. El equipo fue muy atento durante todo el proceso.",
     "rating": 5
   },
   {
     "id": 3,
-    "nombre": "Ana Martínez",
-    "texto": "Siempre compro los croissants los domingos. Son increíblemente frescos y deliciosos.",
+    "nombre": "Ana Sofía López",
+    "texto": "El café es excelente y los croissants siempre están recién horneados. Vengo casi todos los fines de semana a desayunar con mi familia.",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "nombre": "Roberto Castillo",
+    "texto": "Muy buen lugar, el servicio es rápido y amable. Los precios son justos para la calidad que ofrecen. Mi único comentario es que a veces hay que esperar mesa en fin de semana, pero vale la pena.",
     "rating": 4
+  },
+  {
+    "id": 5,
+    "nombre": "Daniela Pérez",
+    "texto": "Las galletas decoradas son una obra de arte y saben increíble. Compré una caja para regalar y todos preguntaron de dónde eran.",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "nombre": "Jorge Ramírez",
+    "texto": "Un lugar con mucho encanto, perfecto para trabajar un rato con buen café. El red velvet es de lo mejor que he probado en Mérida.",
+    "rating": 5
   }
 ]
