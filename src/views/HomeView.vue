@@ -35,7 +35,7 @@ onMounted(() => {
   const el = document.getElementById('contacto')
   if (el) {
     observer = new IntersectionObserver(
-      ([entry]) => { showButton.value = !entry.isIntersecting },
+      ([entry]) => { if (entry) showButton.value = !entry.isIntersecting },
       { threshold: 0.3 },
     )
     observer.observe(el)
