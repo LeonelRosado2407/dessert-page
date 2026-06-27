@@ -9,7 +9,7 @@ import AppFooter from './components/layout/AppFooter.vue'
     <AppNavbar />
     <main class="flex-1">
       <RouterView v-slot="{ Component, route }">
-        <Transition name="slide" mode="out-in">
+        <Transition name="page" mode="out-in">
           <div :key="route.path">
             <component :is="Component" />
           </div>
@@ -21,22 +21,20 @@ import AppFooter from './components/layout/AppFooter.vue'
 </template>
 
 <style>
-.slide-enter-active {
-  transition: all 0.4s ease;
-  transition-delay: 0.1s;
+.page-enter-active {
+  transition: all 0.25s ease-out;
 }
 
-.slide-leave-active {
-  transition: all 0.35s ease;
+.page-leave-active {
+  transition: all 0.15s ease-in;
 }
 
-.slide-enter-from {
+.page-enter-from {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateY(12px);
 }
 
-.slide-leave-to {
+.page-leave-to {
   opacity: 0;
-  transform: translateX(-30px);
 }
 </style>

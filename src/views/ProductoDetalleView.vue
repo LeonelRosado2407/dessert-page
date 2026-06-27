@@ -29,13 +29,18 @@ const producto = productos.find((p) => p.slug === route.params.slug)
     </header>
 
     <section v-if="producto.imagenes.length" class="flex gap-4 mb-12 overflow-x-auto">
-      <img
+      <div
         v-for="(img, i) in producto.imagenes"
         :key="i"
-        :src="img"
-        :alt="`${producto.nombre} - imagen ${i + 1}`"
-        class="w-96 h-64 object-cover rounded-xl border border-toffee/30 shrink-0"
-      />
+        class="w-96 h-64 shrink-0 bg-toffee/10 rounded-xl border border-toffee/30"
+      >
+        <img
+          :src="img"
+          loading="lazy"
+          :alt="`${producto.nombre} - imagen ${i + 1}`"
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
     </section>
 
     <section class="mb-12">

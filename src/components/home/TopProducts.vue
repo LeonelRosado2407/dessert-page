@@ -23,7 +23,9 @@ const { target, isVisible } = useInView()
         :class="{ 'md:flex-row-reverse': i % 2 !== 0 }"
       >
         <div class="flex-1">
-          <img :src="item.imagenes[0]" :alt="item.nombre" class="w-full h-80 object-cover rounded-xl border border-toffee/30" />
+          <div class="w-full h-full min-h-80 bg-toffee/10 rounded-xl">
+            <img loading="lazy" :src="item.main_img ?? item.imagenes[0] ?? ''" :alt="item.nombre" class="w-full h-80 object-cover rounded-xl border border-toffee/30" />
+          </div>
         </div>
         <div class="flex-1 text-center md:text-left">
           <h3 class="text-2xl font-bold mb-2 text-chocolate-dark">{{ item.nombre }}</h3>

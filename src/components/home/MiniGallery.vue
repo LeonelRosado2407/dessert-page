@@ -8,7 +8,7 @@ const altura = (i: number) => alturas[i % alturas.length]
 
 const allImages = productos
   .filter((p) => p.inGallery)
-  .flatMap((p) => p.imagenes.map((img) => ({ img, nombre: p.nombre })))
+  .map((p) => ({ img: p.main_img ?? p.imagenes[0] ?? '', nombre: p.nombre }))
   .slice(0, 6)
 
 const { target, isVisible } = useInView()
@@ -28,11 +28,14 @@ const { target, isVisible } = useInView()
         :key="i"
         class="rounded-xl overflow-hidden border border-toffee/30 bg-cream mb-4 break-inside-avoid transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:border-rose/40"
       >
-        <img
-          :src="item.img"
-          :alt="item.nombre"
-          :class="['w-full object-cover', altura(i)]"
-        />
+        <div :class="['w-full bg-toffee/10', altura(i)]">
+          <img
+            loading="lazy"
+            :src="item.img"
+            :alt="item.nombre"
+            class="w-full h-full object-cover"
+          />
+        </div>
       </article>
     </div>
   </section>

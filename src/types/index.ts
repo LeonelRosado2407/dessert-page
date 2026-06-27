@@ -5,6 +5,7 @@ export interface Producto {
   descripcionCorta: string
   descripcion: string
   historia: string
+  main_img?: string
   imagenes: string[]
   videoUrl: string
   precio: number

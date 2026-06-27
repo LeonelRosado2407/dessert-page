@@ -1,12 +1,17 @@
 [
   {
     "id": 1,
-    "slug": "espresso",
-    "nombre": "Espresso",
+    "slug": "expresso",
+    "nombre": "Esspresso",
     "descripcionCorta": "Café puro de alta intensidad",
     "descripcion": "Extracción concentrada de granos arábica tostado medio-oscuro, con crema dorada y cuerpo aterciopelado.",
     "historia": "El espresso es el alma de nuestra cafetería. Cada tiro se prepara al momento con granos seleccionados de Chiapas.",
-    "imagenes": ["/img/products/espresso_main.jpg"],
+    "imagenes": [
+      "/img/products/expresso_main.jpg",
+      "/img/products/expresso2.jpg",
+      "/img/products/expresso3.jpg"
+    ],
+    "main_img": "/img/products/expresso_main.jpg",
     "videoUrl": "",
     "precio": 35,
     "categoria": "bebidas",
@@ -21,7 +26,12 @@
     "descripcionCorta": "Espresso con agua caliente",
     "descripcion": "Doble shot de espresso diluido con agua caliente para un café más suave pero con todo el sabor.",
     "historia": "Nacido de la tradición de los soldados estadounidenses en Europa que buscaban un café más ligero. Hoy es un clásico en nuestra barra.",
-    "imagenes": ["/img/products/americano_main.jpg"],
+    "imagenes": [
+      "/img/products/americano_main.jpg",
+      "/img/products/americano2.jpg",
+      "/img/products/americano3.jpg"
+    ],
+    "main_img": "/img/products/americano_main.jpg",
     "videoUrl": "",
     "precio": 40,
     "categoria": "bebidas",
@@ -36,7 +46,12 @@
     "descripcionCorta": "Espresso con leche vaporizada y espuma",
     "descripcion": "Clásico italiano con espresso, leche vaporizada y una capa generosa de espuma de leche coronada con un toque de cacao.",
     "historia": "El cappuccino debe su nombre a los frailes capuchinos por el color marrón de sus hábitos. Es la bebida más pedida de nuestra carta.",
-    "imagenes": ["/img/products/cappuccino_main.jpg"],
+    "imagenes": [
+      "/img/products/cappuccino_main.jpg",
+      "/img/products/cappuccino2.jpg",
+      "/img/products/cappuccino3.jpg"
+    ],
+    "main_img": "/img/products/cappuccino_main.jpg",
     "videoUrl": "",
     "precio": 48,
     "categoria": "bebidas",
@@ -51,7 +66,12 @@
     "descripcionCorta": "Espresso suave con mucha leche",
     "descripcion": "Espresso con leche vaporizada y una fina capa de espuma. Disponible en vainilla, caramelo o avellana.",
     "historia": "El latte es el consentido de quienes buscan un café cremoso sin perder la esencia. Nuestros jarabes son caseros.",
-    "imagenes": ["/img/products/latte_main.jpg"],
+    "imagenes": [
+      "/img/products/latte_main.jpg",
+      "/img/products/latte2.jpg",
+      "/img/products/latte3.jpg"
+    ],
+    "main_img": "/img/products/latte_main.jpg",
     "videoUrl": "",
     "precio": 55,
     "categoria": "bebidas",
@@ -66,7 +86,12 @@
     "descripcionCorta": "Café con chocolate",
     "descripcion": "Espresso con chocolate artesanal derretido y leche vaporizada, coronado con crema batida y jarabe de chocolate.",
     "historia": "El mocha nació en Yemen, pero nuestra versión está inspirada en las tardes lluviosas y el antojo de algo dulce y cálido.",
-    "imagenes": ["/img/products/mocha_main.jpg"],
+    "imagenes": [
+      "/img/products/mocha_main.jpg",
+      "/img/products/mocha2.jpg",
+      "/img/products/mocha3.jpg"
+    ],
+    "main_img": "/img/products/mocha_main.jpg",
     "videoUrl": "",
     "precio": 58,
     "categoria": "bebidas",
@@ -81,7 +106,12 @@
     "descripcionCorta": "Café de extracción en frío",
     "descripcion": "Café de extracción lenta durante 18 horas en frío, resultando en una bebida suave, dulce naturalmente y baja en acidez.",
     "historia": "Descubrimos el cold brew durante un viaje a Nueva Orleans. Su preparación lenta nos enamoró y lo trajimos como especialidad de la casa.",
-    "imagenes": ["/img/products/coldbrew_main.jpg"],
+    "imagenes": [
+      "/img/products/coldbrew_main.jpg",
+      "/img/products/coldbrew2.jpg",
+      "/img/products/coldbrew3.jpg"
+    ],
+    "main_img": "/img/products/coldbrew_main.jpg",
     "videoUrl": "",
     "precio": 50,
     "categoria": "bebidas",
@@ -96,7 +126,12 @@
     "descripcionCorta": "Chocolate artesanal cremoso",
     "descripcion": "Chocolate artesanal derretido con leche entera y un toque de canela, servido con malvavisco y virutas de chocolate.",
     "historia": "Nuestra receta usa chocolate de Tabasco con 65% de cacao. Cada taza se prepara con cariño, como lo hacía la abuela.",
-    "imagenes": ["/img/products/chocolate-caliente_main.jpg"],
+    "imagenes": [
+      "/img/products/chocolatecaliente_main.jpg",
+      "/img/products/chocolatecaliente2.jpg",
+      "/img/products/chocolatecaliente3.jpg"
+    ],
+    "main_img": "/img/products/chocolatecalientemain.jpg",
     "videoUrl": "",
     "precio": 52,
     "categoria": "bebidas",
@@ -111,7 +146,8 @@
     "descripcionCorta": "Infusiones de té de hoja suelta",
     "descripcion": "Selección de tés de hoja suelta: manzanilla, hibisco o verde. Servido en tetera individual con reposera.",
     "historia": "Seleccionamos cada té de fincas que comparten nuestra filosofía de calidad y sostenibilidad. Cada infusión es un momento de calma.",
-    "imagenes": ["/img/products/te-de-hoja_main.jpg"],
+    "imagenes": ["/img/products/te_main.jpg", "/img/products/te2.jpg", "/img/products/te3.jpg"],
+    "main_img": "/img/products/te_main.jpg",
     "videoUrl": "",
     "precio": 40,
     "categoria": "bebidas",
@@ -132,7 +168,8 @@
     "categoria": "bebidas",
     "subcategoria": "frias",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/frappe_main.jpg"
   },
   {
     "id": 10,
@@ -147,7 +184,8 @@
     "categoria": "bebidas",
     "subcategoria": "frias",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/limonada_main.jpg"
   },
   {
     "id": 11,
@@ -162,7 +200,8 @@
     "categoria": "bebidas",
     "subcategoria": "frias",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/te-helado_main.jpg"
   },
   {
     "id": 12,
@@ -177,7 +216,8 @@
     "categoria": "panaderia",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/croissant-clasico_main.jpg"
   },
   {
     "id": 13,
@@ -192,7 +232,8 @@
     "categoria": "panaderia",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/croissant-chocolate_main.jpg"
   },
   {
     "id": 14,
@@ -207,7 +248,8 @@
     "categoria": "panaderia",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/pan-temporada_main.jpg"
   },
   {
     "id": 15,
@@ -222,7 +264,8 @@
     "categoria": "panaderia",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/cinnamon-roll_main.jpg"
   },
   {
     "id": 16,
@@ -237,7 +280,8 @@
     "categoria": "panaderia",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/scone_main.jpg"
   },
   {
     "id": 17,
@@ -252,7 +296,8 @@
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/pastel-chocolate_main.jpg"
   },
   {
     "id": 18,
@@ -267,7 +312,8 @@
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": true,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/red-velvet_main.jpg"
   },
   {
     "id": 19,
@@ -276,13 +322,17 @@
     "descripcionCorta": "Cheesecake horneado estilo neoyorquino",
     "descripcion": "Receta horneada a baño María con base de galleta, cremoso y firme. Textura sedosa inigualable con un toque de vainilla.",
     "historia": "Nuestra versión del clásico neoyorquino, adaptada con ingredientes locales. Es el postre favorito de los clientes más tradicionales.",
-    "imagenes": ["/img/products/cheesecake-clasico_main.jpg", "/img/products/cheesecake-clasico_1.jpg"],
+    "imagenes": [
+      "/img/products/cheesecake-clasico_main.jpg",
+      "/img/products/cheesecake-clasico_1.jpg"
+    ],
     "videoUrl": "",
     "precio": 70,
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": true,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/cheesecake-clasico_main.jpg"
   },
   {
     "id": 20,
@@ -297,7 +347,8 @@
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/cheesecake-temporada_main.jpg"
   },
   {
     "id": 21,
@@ -312,7 +363,8 @@
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/tres-leches_main.jpg"
   },
   {
     "id": 22,
@@ -327,7 +379,8 @@
     "categoria": "pasteles",
     "subcategoria": "rebanadas",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/zanahoria_main.jpg"
   },
   {
     "id": 23,
@@ -342,7 +395,8 @@
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/cupcake_main.jpg"
   },
   {
     "id": 24,
@@ -351,13 +405,18 @@
     "descripcionCorta": "Macarons artesanales franceses",
     "descripcion": "Delicados macarons con rellenos artesanales. Sabores rotativos: frambuesa, chocolate, vainilla, pistacho, caramelo salado y limón.",
     "historia": "Los macarons llegaron a nuestra tienda como un reto personal de nuestra pastelera principal, quien estudió en Lyon.",
-    "imagenes": ["/img/products/macarons_main.jpg", "/img/products/macarons_1.jpg", "/img/products/macarons_2.jpg"],
+    "imagenes": [
+      "/img/products/macarons_main.jpg",
+      "/img/products/macarons_1.jpg",
+      "/img/products/macarons_2.jpg"
+    ],
     "videoUrl": "",
     "precio": 85,
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/macarons_main.jpg"
   },
   {
     "id": 25,
@@ -366,13 +425,18 @@
     "descripcionCorta": "Brownie de chocolate con trocitos de nuez",
     "descripcion": "Un clásico postre de chocolate, con sabor intenso y textura suave y húmeda. Relleno con trocitos de nuez para un toque crujiente.",
     "historia": "Este brownie ha sido parte de nuestra receta desde el principio, creado con ingredientes simples pero de alta calidad.",
-    "imagenes": ["/img/products/brownie_main.jpg", "/img/products/brownie_1.jpg", "/img/products/brownie_2.jpg"],
+    "imagenes": [
+      "/img/products/brownie_main.jpg",
+      "/img/products/brownie_1.jpg",
+      "/img/products/brownie_2.jpg"
+    ],
     "videoUrl": "",
     "precio": 42,
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": true,
-    "inGallery": true
+    "inGallery": true,
+    "main_img": "/img/products/brownie_main.jpg"
   },
   {
     "id": 26,
@@ -387,7 +451,8 @@
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/brownie-helado_main.jpg"
   },
   {
     "id": 27,
@@ -402,7 +467,8 @@
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/tartaleta_main.jpg"
   },
   {
     "id": 28,
@@ -417,7 +483,8 @@
     "categoria": "individuales",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/alfajor_main.jpg"
   },
   {
     "id": 29,
@@ -432,7 +499,8 @@
     "categoria": "galletas",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/galleta-chip_main.jpg"
   },
   {
     "id": 30,
@@ -447,7 +515,8 @@
     "categoria": "galletas",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/galleta-decorada_main.jpg"
   },
   {
     "id": 31,
@@ -462,7 +531,8 @@
     "categoria": "galletas",
     "subcategoria": "",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/caja-galletas_main.jpg"
   },
   {
     "id": 32,
@@ -477,7 +547,8 @@
     "categoria": "especiales",
     "subcategoria": "por-encargo",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/pastel-personalizado_main.jpg"
   },
   {
     "id": 33,
@@ -492,6 +563,7 @@
     "categoria": "especiales",
     "subcategoria": "por-encargo",
     "isTop": false,
-    "inGallery": false
+    "inGallery": false,
+    "main_img": "/img/products/pastel-tematico_main.jpg"
   }
 ]

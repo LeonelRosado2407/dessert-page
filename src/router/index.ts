@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior() {
     return new Promise((resolve) => {
-      setTimeout(() => resolve({ top: 0 }), 350)
+      setTimeout(() => resolve({ top: 0 }), 150)
     })
   },
   routes: [
