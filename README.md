@@ -1,6 +1,15 @@
 # Dulce Tentación · Café y repostería artesanal
 
 [![CI](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml/badge.svg)](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml)
+[![Demo](https://img.shields.io/badge/demo-sweet--tentacion.vercel.app-000?logo=vercel)](https://sweet-tentacion.vercel.app)
+[![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-A65D57)](LICENSE)
+
+![Vue](https://img.shields.io/badge/Vue_3-4FC08D?logo=vuedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?logo=tailwindcss&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33)
 
 Sitio web y **menú en línea** para una cafetería-pastelería mexicana (ficticia). El objetivo: una página vistosa, con animaciones suaves e interacciones claras, que además le sirva al cliente para consultar el menú, los precios y el horario desde el celular.
 
@@ -103,5 +112,9 @@ npm run build && CI=1 npx playwright test --project=chromium --reporter=list
 ```
 
 ---
+
+## Licencia
+
+El código está bajo la licencia [MIT](LICENSE). Las fotografías se incluyen solo como demostración y pertenecen a sus respectivos autores.
 
 > El negocio, sus datos de contacto y su historia son ficticios.
