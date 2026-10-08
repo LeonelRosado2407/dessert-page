@@ -16,9 +16,13 @@ npm run build          # type-check (vue-tsc --build) + vite build, in parallel
 npm run type-check     # vue-tsc only
 npm run lint           # oxlint --fix, then eslint --fix (both auto-fix)
 npm run format         # prettier on src/ (no semicolons, single quotes, width 100)
-npm run test:unit      # vitest (jsdom); no unit tests exist yet
+npm run test:unit      # vitest (jsdom), watch mode; single run: npx vitest run; one file: npx vitest run src/utils/__tests__/horario.spec.ts
 npm run test:e2e       # playwright (e2e/app.spec.ts)
 ```
+
+Unit tests live in `__tests__/` folders next to the code (that glob is what `tsconfig.vitest.json` type-checks). Components using `useInView` need `IntersectionObserver` stubbed (jsdom lacks it); see `ProductCard.spec.ts`. Keep testable logic in `src/utils/` (e.g. search lives in `utils/buscar.ts`, not in the view).
+
+CI (`.github/workflows/ci.yml`) runs lint without `--fix`, type-check, unit tests, build and Chromium e2e on every push to `main` and on PRs.
 
 E2E notes: locally Playwright runs **headed** against the dev server on :5173. To run headless against a production build: `npm run build && CI=1 npx playwright test --project=chromium --reporter=list` (CI mode uses `vite preview` on :4173).
 

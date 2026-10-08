@@ -5,6 +5,7 @@ import productos from '../data/productos.json'
 import ProductCard from '../components/productos/ProductCard.vue'
 import { useFavoritosStore } from '../stores/favoritos'
 import { scrollToId } from '../utils/scrollToId'
+import { coincideBusqueda } from '../utils/buscar'
 
 const categorias: { key: string; label: string; subs?: { key: string; label: string }[] }[] = [
   {
@@ -51,20 +52,13 @@ watch([busqueda, soloFavoritos], ([q, f]) => {
   router.replace({ query: { ...(q ? { q } : {}), ...(f ? { fav: '1' } : {}) } })
 })
 
-function normalizar(texto: string) {
-  return texto.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-}
-
 const hayFiltros = computed(() => busqueda.value.trim() !== '' || soloFavoritos.value)
 
-const filtrados = computed(() => {
-  const q = normalizar(busqueda.value.trim())
-  return productos.filter(
-    (p) =>
-      (!soloFavoritos.value || fav.esFavorito(p.id)) &&
-      (!q || normalizar(`${p.nombre} ${p.descripcionCorta}`).includes(q)),
-  )
-})
+const filtrados = computed(() =>
+  productos.filter(
+    (p) => (!soloFavoritos.value || fav.esFavorito(p.id)) && coincideBusqueda(p, busqueda.value),
+  ),
+)
 
 function productosPorSub(catKey: string, subKey?: string) {
   return filtrados.value.filter(

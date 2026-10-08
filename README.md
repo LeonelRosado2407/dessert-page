@@ -1,5 +1,7 @@
 # Dulce Tentación · Café y repostería artesanal
 
+[![CI](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml/badge.svg)](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml)
+
 Sitio web y **menú en línea** para una cafetería-pastelería mexicana (ficticia). El objetivo: una página vistosa, con animaciones suaves e interacciones claras, que además le sirva al cliente para consultar el menú, los precios y el horario desde el celular.
 
 **Demo:** [sweet-tentacion.vercel.app](https://sweet-tentacion.vercel.app)
@@ -36,7 +38,9 @@ Sitio web y **menú en línea** para una cafetería-pastelería mexicana (fictic
 - **Vite** como bundler y servidor de desarrollo
 - **Tailwind CSS v4** con tokens de diseño propios (`@theme`)
 - **Vue Router** (rutas lazy, `scrollBehavior` personalizado) y **Pinia**
+- **Vitest** + **Vue Test Utils** para pruebas unitarias y de componentes
 - **Playwright** para pruebas end-to-end
+- **GitHub Actions**: lint, type-check, pruebas y build en cada push y PR
 - **oxlint + ESLint + Prettier**
 - Desplegado en **Vercel**
 
@@ -75,6 +79,15 @@ npm run dev          # servidor de desarrollo
 npm run build        # type-check + build de producción
 npm run lint         # oxlint + eslint
 ```
+
+### Pruebas unitarias
+
+```sh
+npm run test:unit                          # modo watch
+npx vitest run                             # una sola corrida
+```
+
+Cubren el formato de precios, el cálculo de "abierto ahora" (horas límite y días cerrados), la búsqueda sin acentos, el store de favoritos y los componentes de tarjeta e imagen con placeholder.
 
 ### Pruebas end-to-end
 
