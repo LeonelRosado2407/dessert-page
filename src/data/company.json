@@ -8,5 +8,20 @@
         "state" : "Provincia de Sabor",
         "zip" : "12345",
         "country" : "País de los Dulces"
+    },
+    "mapa" : {
+        "lat" : 19.4194,
+        "lng" : -99.1617
+    },
+    "telefono" : "55 1234 5678",
+    "whatsapp" : "525512345678",
+    "email" : "hola@dulcetentacion.mx",
+    "horario" : [
+        { "etiqueta" : "Lunes a sábado", "dias" : [1, 2, 3, 4, 5, 6], "abre" : "08:00", "cierra" : "20:00" },
+        { "etiqueta" : "Domingo", "dias" : [0], "abre" : null, "cierra" : null }
+    ],
+    "redes" : {
+        "instagram" : "https://instagram.com/",
+        "facebook" : "https://facebook.com/"
     }
 }

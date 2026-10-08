@@ -14,8 +14,13 @@ const { target, isVisible } = useInView()
   >
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div class="flex-1">
-        <div class="w-full h-80 rounded-xl border border-toffee/30 bg-toffee/20 flex items-center justify-center text-chocolate-dark/40">
-          Foto del equipo
+        <div class="group w-full h-80 rounded-xl border border-toffee/30 bg-toffee/20 overflow-hidden">
+          <img
+            src="/img/our_team.jpg"
+            alt="Nuestro equipo"
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
         </div>
       </div>
       <div class="flex-1">

@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "slug": "expresso",
-    "nombre": "Esspresso",
+    "slug": "espresso",
+    "nombre": "Espresso",
     "descripcionCorta": "Café puro de alta intensidad",
     "descripcion": "Extracción concentrada de granos arábica tostado medio-oscuro, con crema dorada y cuerpo aterciopelado.",
     "historia": "El espresso es el alma de nuestra cafetería. Cada tiro se prepara al momento con granos seleccionados de Chiapas.",
@@ -131,7 +131,7 @@
       "/img/products/chocolatecaliente2.jpg",
       "/img/products/chocolatecaliente3.jpg"
     ],
-    "main_img": "/img/products/chocolatecalientemain.jpg",
+    "main_img": "/img/products/chocolatecaliente_main.jpg",
     "videoUrl": "",
     "precio": 52,
     "categoria": "bebidas",

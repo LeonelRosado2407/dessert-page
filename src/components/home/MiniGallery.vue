@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import productos from '../../data/productos.json'
 import { useInView } from '../../composables/useInView'
+import ProductImage from '../productos/ProductImage.vue'
 
 const alturas = ['h-56', 'h-80', 'h-64', 'h-72', 'h-60', 'h-76']
 
@@ -8,7 +10,7 @@ const altura = (i: number) => alturas[i % alturas.length]
 
 const allImages = productos
   .filter((p) => p.inGallery)
-  .map((p) => ({ img: p.main_img ?? p.imagenes[0] ?? '', nombre: p.nombre }))
+  .map((p) => ({ img: p.main_img ?? p.imagenes[0] ?? '', nombre: p.nombre, slug: p.slug }))
   .slice(0, 6)
 
 const { target, isVisible } = useInView()
@@ -23,20 +25,26 @@ const { target, isVisible } = useInView()
   >
     <h2 class="text-3xl font-bold mb-8 text-center text-rose">Galería</h2>
     <div class="columns-2 md:columns-3 gap-4 max-w-6xl mx-auto">
-      <article
+      <RouterLink
         v-for="(item, i) in allImages"
-        :key="i"
-        class="rounded-xl overflow-hidden border border-toffee/30 bg-cream mb-4 break-inside-avoid transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:border-rose/40"
+        :key="item.slug"
+        :to="`/productos/${item.slug}`"
+        class="group relative block rounded-xl overflow-hidden border border-toffee/30 bg-cream mb-4 break-inside-avoid transition-all duration-300 hover:shadow-lg hover:border-rose/40"
       >
-        <div :class="['w-full bg-toffee/10', altura(i)]">
-          <img
-            loading="lazy"
-            :src="item.img"
-            :alt="item.nombre"
-            class="w-full h-full object-cover"
-          />
+        <div
+          :class="[
+            'w-full bg-toffee/10 transition-transform duration-500 group-hover:scale-105',
+            altura(i),
+          ]"
+        >
+          <ProductImage :src="item.img" :alt="item.nombre" />
         </div>
-      </article>
+        <span
+          class="absolute inset-x-0 bottom-0 px-4 py-3 bg-linear-to-t from-chocolate-dark/70 to-transparent text-cream text-sm font-semibold opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          {{ item.nombre }}
+        </span>
+      </RouterLink>
     </div>
   </section>
 </template>

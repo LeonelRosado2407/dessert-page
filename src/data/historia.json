@@ -1,0 +1,30 @@
+{
+  "intro": "Lo que empezó como una cocina familiar llena de olor a vainilla se convirtió, receta tras receta, en el lugar donde muchos celebran sus días importantes.",
+  "hitos": [
+    {
+      "anio": "1985",
+      "titulo": "Una cocina, un horno y muchas ganas",
+      "texto": "Doña Carmen empezó horneando pasteles por encargo para vecinos y amigos. Las recetas eran de su mamá; el sazón, todo suyo."
+    },
+    {
+      "anio": "1992",
+      "titulo": "Abrimos nuestra primera tienda",
+      "texto": "Un local pequeño con tres mesas y una vitrina. El pastel de tres leches se volvió leyenda en la colonia."
+    },
+    {
+      "anio": "2004",
+      "titulo": "Llega el café",
+      "texto": "La segunda generación trajo granos de Chiapas y una máquina de espresso. Desde entonces, el café y el pan van de la mano."
+    },
+    {
+      "anio": "2015",
+      "titulo": "Pasteles para tus momentos",
+      "texto": "Formalizamos los pedidos especiales: bodas, cumpleaños y celebraciones con diseños hechos a la medida."
+    },
+    {
+      "anio": "Hoy",
+      "titulo": "Seguimos horneando cada mañana",
+      "texto": "Mismas recetas, ingredientes frescos y la misma ilusión de 1985. Ahora también puedes ver nuestro menú en línea."
+    }
+  ]
+}

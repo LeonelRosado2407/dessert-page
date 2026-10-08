@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import productos from '../../data/productos.json'
 import { useInView } from '../../composables/useInView'
+import ProductImage from '../productos/ProductImage.vue'
 
 const top = productos.filter((p) => p.isTop)
 
@@ -22,14 +24,23 @@ const { target, isVisible } = useInView()
         class="flex flex-col md:flex-row items-center gap-8"
         :class="{ 'md:flex-row-reverse': i % 2 !== 0 }"
       >
-        <div class="flex-1">
-          <div class="w-full h-full min-h-80 bg-toffee/10 rounded-xl">
-            <img loading="lazy" :src="item.main_img ?? item.imagenes[0] ?? ''" :alt="item.nombre" class="w-full h-80 object-cover rounded-xl border border-toffee/30" />
+        <RouterLink :to="`/productos/${item.slug}`" class="group flex-1 w-full">
+          <div class="w-full h-80 bg-toffee/10 rounded-xl border border-toffee/30 overflow-hidden">
+            <div class="w-full h-full transition-transform duration-500 group-hover:scale-105">
+              <ProductImage :src="item.main_img ?? item.imagenes[0]" :alt="item.nombre" />
+            </div>
           </div>
-        </div>
+        </RouterLink>
         <div class="flex-1 text-center md:text-left">
           <h3 class="text-2xl font-bold mb-2 text-chocolate-dark">{{ item.nombre }}</h3>
-          <p class="text-chocolate-dark/70">{{ item.descripcionCorta }}</p>
+          <p class="text-chocolate-dark/70 mb-4">{{ item.descripcionCorta }}</p>
+          <RouterLink
+            :to="`/productos/${item.slug}`"
+            class="group inline-flex items-center gap-1 text-sm font-semibold text-rose hover:text-toffee transition-colors"
+          >
+            Ver detalle
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </RouterLink>
         </div>
       </article>
     </div>

@@ -4,9 +4,10 @@ import HeroBanner from '@/components/home/HeroBanner.vue'
 import AboutUs from '@/components/home/AboutUs.vue'
 import MiniGallery from '@/components/home/MiniGallery.vue'
 import TopProducts from '@/components/home/TopProducts.vue'
-import Reviews from '@/components/home/Reviews.vue'
+import ReviewsSection from '@/components/home/ReviewsSection.vue'
 import FAQ from '@/components/home/FAQ.vue'
 import ContactSection from '@/components/home/ContactSection.vue'
+import { scrollToId } from '@/utils/scrollToId'
 
 const menuOpen = ref(false)
 const showButton = ref(true)
@@ -23,7 +24,7 @@ const sections = [
 ]
 
 function scrollTo(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  scrollToId(id)
   menuOpen.value = false
 }
 
@@ -50,7 +51,7 @@ onUnmounted(() => observer?.disconnect())
   <AboutUs />
   <MiniGallery />
   <TopProducts />
-  <Reviews />
+  <ReviewsSection />
   <FAQ />
   <ContactSection />
 
