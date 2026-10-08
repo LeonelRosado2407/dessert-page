@@ -1,73 +1,94 @@
-# desert-page
+# Dulce Tentación · Café y repostería artesanal
 
-This template should help get you started developing with Vue 3 in Vite.
+Sitio web y **menú en línea** para una cafetería-pastelería mexicana (ficticia). El objetivo: una página vistosa, con animaciones suaves e interacciones claras, que además le sirva al cliente para consultar el menú, los precios y el horario desde el celular.
 
-## Recommended IDE Setup
+**Demo:** [sweet-tentacion.vercel.app](https://sweet-tentacion.vercel.app)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Inicio](docs/screenshots/home.jpg)
 
-## Recommended Browser Setup
+## Funcionalidades
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**Menú en línea**
+- 33 productos agrupados por categoría y subcategoría, con precio en MXN ("Por cotizar" en pedidos especiales).
+- **Búsqueda sin acentos**: "cafe" encuentra "Café"; busca en nombre y descripción.
+- **Favoritos** persistentes (`localStorage`) con filtro dedicado.
+- La búsqueda y los filtros viven en la URL (`/productos?q=cafe&fav=1`): se pueden compartir y sobreviven al botón de atrás.
+- Navegación por categorías: barra lateral en escritorio y chips horizontales en móvil, ambas resaltan la sección visible.
+- Detalle de producto con galería y **lightbox** (teclado, flechas y cierre con Escape).
 
-## Type Support for `.vue` Imports in TS
+**Diseño e interacción**
+- Animaciones al hacer scroll con `IntersectionObserver`, aparición escalonada de tarjetas, transiciones entre páginas y micro-interacciones (corazón con "pop", hover con zoom).
+- Respeta `prefers-reduced-motion`: si el sistema lo pide, se desactivan animaciones y scroll suave.
+- Indicador **"Abierto ahora / Cerrado"** calculado a partir del horario.
+- Página de **Historia** con línea de tiempo que se dibuja conforme avanzas.
+- Placeholder con la paleta del sitio cuando una foto no existe o falla al cargar.
+- Responsive de 375px en adelante, navbar con menú hamburguesa, página 404 y títulos por ruta.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+| Menú (escritorio) | Búsqueda (móvil) | Lightbox (móvil) |
+| --- | --- | --- |
+| ![Menú](docs/screenshots/menu.jpg) | ![Búsqueda](docs/screenshots/mobile-busqueda.jpg) | ![Lightbox](docs/screenshots/mobile-lightbox.jpg) |
 
-## Customize configuration
+![Historia](docs/screenshots/historia.jpg)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Stack
 
-## Project Setup
+- **Vue 3** (Composition API, `<script setup>`) + **TypeScript**
+- **Vite** como bundler y servidor de desarrollo
+- **Tailwind CSS v4** con tokens de diseño propios (`@theme`)
+- **Vue Router** (rutas lazy, `scrollBehavior` personalizado) y **Pinia**
+- **Playwright** para pruebas end-to-end
+- **oxlint + ESLint + Prettier**
+- Desplegado en **Vercel**
+
+## Decisiones técnicas
+
+- **Contenido como datos.** Todo el contenido (productos, empresa, horario, historia, FAQ, reseñas) está en JSON dentro de `src/data/`. Cambiar el menú no requiere tocar componentes, y la estructura está lista para migrar a un CMS o API.
+- **Estado en la URL.** Los filtros del menú se sincronizan con la query string en ambos sentidos. El `scrollBehavior` del router ignora los cambios de query en la misma página, para que escribir en el buscador no mueva el scroll, y restaura la posición al volver.
+- **Animaciones sin conflictos.** En las tarjetas, un contenedor maneja la aparición (con retraso escalonado) y otro el hover (sin retraso), así el `transition-delay` no hace lento el hover.
+- **Accesibilidad.** Links reales en las tarjetas (navegables con teclado), `aria-label`/`aria-pressed` en favoritos, diálogo modal accesible en el lightbox y soporte de movimiento reducido.
+- **Rendimiento.** Imágenes redimensionadas y comprimidas, `loading="lazy"` y rutas con carga diferida.
+
+## Estructura
+
+```
+src/
+├── components/
+│   ├── home/          # Secciones del inicio (hero, galería, reseñas, contacto…)
+│   ├── layout/        # Navbar, footer, indicador de horario
+│   ├── productos/     # Tarjeta, imagen con placeholder, favorito, lightbox
+│   └── historia/      # Línea de tiempo
+├── composables/       # useInView (animaciones al hacer scroll)
+├── data/              # Contenido en JSON
+├── router/
+├── stores/            # Favoritos (Pinia + localStorage)
+├── utils/             # Precio, horario, scroll
+└── views/
+```
+
+## Correr el proyecto
+
+Requiere Node `^22.18.0` o `>=24.12.0`.
 
 ```sh
 npm install
+npm run dev          # servidor de desarrollo
+npm run build        # type-check + build de producción
+npm run lint         # oxlint + eslint
 ```
 
-### Compile and Hot-Reload for Development
+### Pruebas end-to-end
 
 ```sh
-npm run dev
+npx playwright install                     # solo la primera vez
+npm run test:e2e                           # contra el servidor de desarrollo
 ```
 
-### Type-Check, Compile and Minify for Production
+Para correrlas sin abrir el navegador, contra el build de producción:
 
 ```sh
-npm run build
+npm run build && CI=1 npx playwright test --project=chromium --reporter=list
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+---
 
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+> El negocio, sus datos de contacto y su historia son ficticios.
