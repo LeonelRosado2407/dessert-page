@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#2D1B13"/>
+  <!-- Capacillo -->
+  <path d="M16 34h32l-4.5 20a3 3 0 0 1-2.9 2.3H23.4a3 3 0 0 1-2.9-2.3z" fill="#D4A574"/>
+  <path d="M26 34l1.5 22M32 34v22M38 34l-1.5 22" stroke="#2D1B13" stroke-width="2" stroke-opacity=".25"/>
+  <!-- Betún -->
+  <path d="M13 35c0-5 3.5-8.5 8-9 .5-6 5.5-10 11-10s10.5 4 11 10c4.5.5 8 4 8 9z" fill="#A65D57"/>
+  <path d="M22 27c3 2 7 2.5 10 2.5S39 29 42 27" stroke="#FDF2F0" stroke-width="2" stroke-linecap="round" fill="none" opacity=".5"/>
+  <!-- Cereza -->
+  <circle cx="32" cy="12" r="5" fill="#FDF2F0"/>
+  <path d="M33 7c1-2.5 3-4 5-4.5" stroke="#FDF2F0" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>
