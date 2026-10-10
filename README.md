@@ -1,7 +1,7 @@
 # Dulce Tentación · Café y repostería artesanal
 
 [![CI](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml/badge.svg)](https://github.com/LeonelRosado2407/dessert-page/actions/workflows/ci.yml)
-[![Demo](https://img.shields.io/badge/demo-sweet--tentacion.vercel.app-000?logo=vercel)](https://sweet-tentacion.vercel.app)
+[![Demo](https://img.shields.io/badge/demo-dulce.leonelrosado.dev-000?logo=vercel)](https://dulce.leonelrosado.dev)
 [![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-A65D57)](LICENSE)
 
 ![Vue](https://img.shields.io/badge/Vue_3-4FC08D?logo=vuedotjs&logoColor=white)
@@ -13,7 +13,7 @@
 
 Sitio web y **menú en línea** para una cafetería-pastelería mexicana (ficticia). El objetivo: una página vistosa, con animaciones suaves e interacciones claras, que además le sirva al cliente para consultar el menú, los precios y el horario desde el celular.
 
-**Demo:** [sweet-tentacion.vercel.app](https://sweet-tentacion.vercel.app)
+**Demo:** [dulce.leonelrosado.dev](https://dulce.leonelrosado.dev)
 
 ![Inicio](docs/screenshots/home.jpg)
 
